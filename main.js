@@ -11,7 +11,7 @@ const servers = {
     ]
 }
 
-let signalingSocket = new WebSocket("https://delicate-bunny-31073d.netlify.app/");
+let signalingSocket = new WebSocket('wss://peerchat-backend-1.onrender.com');
 
 let init = async() => {
     localStream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});
